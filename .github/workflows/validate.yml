@@ -1,0 +1,50 @@
+name: validate-walkforward
+
+# La validazione e' pesante e quasi statica: settimanale, non notturna.
+# Produce il calibratore (che la pipeline usa solo se ha superato il cancello
+# held-out) e il verdetto sulla gamba VRP.
+on:
+  schedule:
+    - cron: "0 5 * * 0"     # domenica, UTC
+  workflow_dispatch:
+    inputs:
+      horizons:
+        description: "Orizzonti separati da spazio (vuoto = tutti)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: volatility-engine-validate
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Walk-forward out-of-sample
+        env:
+          EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
+        run: |
+          python validate.py ${{ inputs.horizons && format('--horizons {0}', inputs.horizons) || '' }}
+
+      - name: Committa la validazione
+        run: |
+          git config user.name  "kq-bot"
+          git config user.email "bot@kriterionquant.com"
+          git add data/validation.json data/oos_predictions.parquet
+          git diff --staged --quiet || git commit -m "validazione OOS $(date -u +%Y-%m-%d)"
+          git push

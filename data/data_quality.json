@@ -1,0 +1,61 @@
+{
+  "generated_utc": "2026-08-02T09:20:24+00:00",
+  "rows": 4274,
+  "first": "2009-09-18",
+  "last": "2026-07-31",
+  "series": {
+    "VIX": {
+      "cboe_bars": 9241,
+      "eodhd_bars": 0,
+      "merged_bars": 9241,
+      "cboe_last": "2026-07-31",
+      "eodhd_last": null,
+      "first": "1990-01-02",
+      "last": "2026-07-31",
+      "divergences": 0
+    },
+    "VIX3M": {
+      "cboe_bars": 4242,
+      "eodhd_bars": 0,
+      "merged_bars": 4242,
+      "cboe_last": "2026-07-31",
+      "eodhd_last": null,
+      "first": "2009-09-18",
+      "last": "2026-07-31",
+      "divergences": 0
+    },
+    "VVIX": {
+      "cboe_bars": 5073,
+      "eodhd_bars": 0,
+      "merged_bars": 5073,
+      "cboe_last": "2026-07-31",
+      "eodhd_last": null,
+      "first": "2006-03-06",
+      "last": "2026-07-31",
+      "divergences": 0
+    },
+    "VIX9D": {
+      "cboe_bars": 3916,
+      "eodhd_bars": 0,
+      "merged_bars": 3916,
+      "cboe_last": "2026-07-31",
+      "eodhd_last": null,
+      "first": "2011-01-04",
+      "last": "2026-07-31",
+      "divergences": 0
+    },
+    "SKEW": {
+      "cboe_bars": 9196,
+      "eodhd_bars": 0,
+      "merged_bars": 9196,
+      "cboe_last": "2026-07-31",
+      "eodhd_last": null,
+      "first": "1990-01-02",
+      "last": "2026-07-31",
+      "divergences": 0
+    }
+  },
+  "anomalies_total": 0,
+  "anomalies": [],
+  "eodhd_available": false
+}

@@ -1,0 +1,52 @@
+name: nightly-volatility-engine
+
+# Cron in UTC: mar-sab alle 01:00, cioe' dopo la chiusura USA del giorno precedente.
+# Lo schedule di GitHub puo' ritardare di parecchi minuti: il buffer del freshness
+# guard lo assorbe, e se i dati risultano stantii la pipeline sospende i segnali
+# direzionali invece di produrne di falsi.
+on:
+  schedule:
+    - cron: "0 1 * * 2-6"
+  workflow_dispatch:
+    inputs:
+      digest:
+        description: "Invia comunque lo status (digest)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: volatility-engine-nightly
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Esegui la pipeline
+        env:
+          EODHD_API_KEY: ${{ secrets.EODHD_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python run_pipeline.py ${{ inputs.digest && '--digest' || '' }}
+
+      - name: Committa gli snapshot
+        run: |
+          git config user.name  "kq-bot"
+          git config user.email "bot@kriterionquant.com"
+          git add data/ state/
+          git diff --staged --quiet || git commit -m "snapshot $(date -u +%Y-%m-%d)"
+          git push

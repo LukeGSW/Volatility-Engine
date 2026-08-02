@@ -1,61 +1,502 @@
 {
-  "generated_utc": "2026-08-02T09:20:24+00:00",
-  "rows": 4274,
-  "first": "2009-09-18",
+  "generated_utc": "2026-08-02T09:34:18+00:00",
+  "rows": 4743,
+  "first": "2007-11-13",
   "last": "2026-07-31",
   "series": {
     "VIX": {
       "cboe_bars": 9241,
-      "eodhd_bars": 0,
-      "merged_bars": 9241,
+      "eodhd_bars": 9249,
+      "merged_bars": 9249,
       "cboe_last": "2026-07-31",
-      "eodhd_last": null,
+      "eodhd_last": "2026-07-31",
       "first": "1990-01-02",
       "last": "2026-07-31",
-      "divergences": 0
+      "divergences": 5
     },
     "VIX3M": {
       "cboe_bars": 4242,
-      "eodhd_bars": 0,
-      "merged_bars": 4242,
+      "eodhd_bars": 4717,
+      "merged_bars": 4717,
       "cboe_last": "2026-07-31",
-      "eodhd_last": null,
-      "first": "2009-09-18",
+      "eodhd_last": "2026-07-31",
+      "first": "2007-11-13",
       "last": "2026-07-31",
-      "divergences": 0
+      "divergences": 1
     },
     "VVIX": {
       "cboe_bars": 5073,
-      "eodhd_bars": 0,
-      "merged_bars": 5073,
+      "eodhd_bars": 5080,
+      "merged_bars": 5080,
       "cboe_last": "2026-07-31",
-      "eodhd_last": null,
+      "eodhd_last": "2026-07-31",
       "first": "2006-03-06",
+      "last": "2026-07-31",
+      "divergences": 0
+    },
+    "SPX": {
+      "cboe_bars": 0,
+      "eodhd_bars": 24762,
+      "merged_bars": 24762,
+      "cboe_last": null,
+      "eodhd_last": "2026-07-31",
+      "first": "1927-12-30",
       "last": "2026-07-31",
       "divergences": 0
     },
     "VIX9D": {
       "cboe_bars": 3916,
-      "eodhd_bars": 0,
-      "merged_bars": 3916,
+      "eodhd_bars": 3917,
+      "merged_bars": 3917,
       "cboe_last": "2026-07-31",
-      "eodhd_last": null,
-      "first": "2011-01-04",
+      "eodhd_last": "2026-07-31",
+      "first": "2011-01-03",
       "last": "2026-07-31",
-      "divergences": 0
+      "divergences": 37
     },
     "SKEW": {
       "cboe_bars": 9196,
-      "eodhd_bars": 0,
-      "merged_bars": 9196,
+      "eodhd_bars": 9218,
+      "merged_bars": 9219,
       "cboe_last": "2026-07-31",
-      "eodhd_last": null,
+      "eodhd_last": "2026-07-31",
       "first": "1990-01-02",
+      "last": "2026-07-31",
+      "divergences": 314
+    },
+    "MOVE": {
+      "cboe_bars": 0,
+      "eodhd_bars": 5959,
+      "merged_bars": 5959,
+      "cboe_last": null,
+      "eodhd_last": "2026-07-31",
+      "first": "2002-11-13",
+      "last": "2026-07-31",
+      "divergences": 0
+    },
+    "VXN": {
+      "cboe_bars": 0,
+      "eodhd_bars": 6419,
+      "merged_bars": 6419,
+      "cboe_last": null,
+      "eodhd_last": "2026-07-31",
+      "first": "2001-01-23",
+      "last": "2026-07-31",
+      "divergences": 0
+    },
+    "OVX": {
+      "cboe_bars": 0,
+      "eodhd_bars": 4838,
+      "merged_bars": 4838,
+      "cboe_last": null,
+      "eodhd_last": "2026-07-31",
+      "first": "2007-05-10",
       "last": "2026-07-31",
       "divergences": 0
     }
   },
-  "anomalies_total": 0,
-  "anomalies": [],
-  "eodhd_available": false
+  "anomalies_total": 357,
+  "anomalies": [
+    {
+      "series": "SKEW",
+      "date": "2024-06-13",
+      "cboe": 162.25,
+      "eodhd": 144.7,
+      "diff": -17.55,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-03-13",
+      "cboe": 132.37,
+      "eodhd": 115.79,
+      "diff": -16.58,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2014-11-25",
+      "cboe": 140.11,
+      "eodhd": 126.27,
+      "diff": -13.84,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2014-03-14",
+      "cboe": 126.26,
+      "eodhd": 112.66,
+      "diff": -13.6,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2023-12-06",
+      "cboe": 132.5,
+      "eodhd": 144.54,
+      "diff": 12.04,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2015-10-12",
+      "cboe": 137.25,
+      "eodhd": 148.92,
+      "diff": 11.67,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-01-29",
+      "cboe": 134.3,
+      "eodhd": 145.84,
+      "diff": 11.54,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2014-03-17",
+      "cboe": 131.87,
+      "eodhd": 143.27,
+      "diff": 11.4,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-09-04",
+      "cboe": 133.28,
+      "eodhd": 144.66,
+      "diff": 11.38,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2015-08-21",
+      "cboe": 130.04,
+      "eodhd": 118.76,
+      "diff": -11.28,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-06-18",
+      "cboe": 150.78,
+      "eodhd": 161.01,
+      "diff": 10.23,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2023-12-05",
+      "cboe": 134.76,
+      "eodhd": 144.54,
+      "diff": 9.78,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2015-12-18",
+      "cboe": 140.84,
+      "eodhd": 131.2,
+      "diff": -9.64,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-06-19",
+      "cboe": 125.38,
+      "eodhd": 134.9,
+      "diff": 9.52,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2018-02-05",
+      "cboe": 117.33,
+      "eodhd": 126.45,
+      "diff": 9.12,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2023-12-04",
+      "cboe": 136.04,
+      "eodhd": 144.54,
+      "diff": 8.5,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-01-28",
+      "cboe": 145.84,
+      "eodhd": 137.93,
+      "diff": -7.91,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2015-02-18",
+      "cboe": 135.0,
+      "eodhd": 127.42,
+      "diff": -7.58,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-09-07",
+      "cboe": 154.76,
+      "eodhd": 162.27,
+      "diff": 7.51,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-02-01",
+      "cboe": 141.63,
+      "eodhd": 134.3,
+      "diff": -7.33,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-09-18",
+      "cboe": 132.09,
+      "eodhd": 139.41,
+      "diff": 7.32,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-07-13",
+      "cboe": 128.52,
+      "eodhd": 135.68,
+      "diff": 7.16,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-04-30",
+      "cboe": 146.32,
+      "eodhd": 139.3,
+      "diff": -7.02,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2016-01-06",
+      "cboe": 128.31,
+      "eodhd": 135.07,
+      "diff": 6.76,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2019-12-30",
+      "cboe": 133.56,
+      "eodhd": 140.29,
+      "diff": 6.73,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-01-08",
+      "cboe": 139.25,
+      "eodhd": 145.92,
+      "diff": 6.67,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-03-19",
+      "cboe": 141.47,
+      "eodhd": 148.11,
+      "diff": 6.64,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2023-04-19",
+      "cboe": 130.48,
+      "eodhd": 137.12,
+      "diff": 6.64,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2015-10-15",
+      "cboe": 144.72,
+      "eodhd": 151.22,
+      "diff": 6.5,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2022-02-07",
+      "cboe": 126.25,
+      "eodhd": 132.75,
+      "diff": 6.5,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2023-12-01",
+      "cboe": 138.04,
+      "eodhd": 144.54,
+      "diff": 6.5,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2023-11-03",
+      "cboe": 140.09,
+      "eodhd": 133.8,
+      "diff": -6.29,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-06-01",
+      "cboe": 149.04,
+      "eodhd": 155.31,
+      "diff": 6.27,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-04-09",
+      "cboe": 132.88,
+      "eodhd": 139.04,
+      "diff": 6.16,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2018-02-16",
+      "cboe": 137.8,
+      "eodhd": 131.67,
+      "diff": -6.13,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-07-08",
+      "cboe": 144.46,
+      "eodhd": 138.34,
+      "diff": -6.12,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-05-28",
+      "cboe": 155.31,
+      "eodhd": 149.35,
+      "diff": -5.96,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2024-06-12",
+      "cboe": 150.66,
+      "eodhd": 144.7,
+      "diff": -5.96,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-08-20",
+      "cboe": 144.05,
+      "eodhd": 138.2,
+      "diff": -5.85,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-12-16",
+      "cboe": 144.79,
+      "eodhd": 138.95,
+      "diff": -5.84,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-02-26",
+      "cboe": 136.23,
+      "eodhd": 142.07,
+      "diff": 5.84,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2018-03-21",
+      "cboe": 133.69,
+      "eodhd": 139.52,
+      "diff": 5.83,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2023-05-26",
+      "cboe": 146.46,
+      "eodhd": 140.73,
+      "diff": -5.73,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-12-22",
+      "cboe": 142.04,
+      "eodhd": 136.33,
+      "diff": -5.71,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2013-10-28",
+      "cboe": 133.27,
+      "eodhd": 127.58,
+      "diff": -5.69,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-11-05",
+      "cboe": 127.65,
+      "eodhd": 133.32,
+      "diff": 5.67,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2020-09-14",
+      "cboe": 130.95,
+      "eodhd": 125.42,
+      "diff": -5.53,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2017-08-16",
+      "cboe": 148.62,
+      "eodhd": 143.23,
+      "diff": -5.39,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-01-27",
+      "cboe": 137.93,
+      "eodhd": 143.31,
+      "diff": 5.38,
+      "resolved_to": "CBOE"
+    },
+    {
+      "series": "SKEW",
+      "date": "2021-06-16",
+      "cboe": 155.97,
+      "eodhd": 161.35,
+      "diff": 5.38,
+      "resolved_to": "CBOE"
+    }
+  ],
+  "eodhd_available": true
 }

@@ -1,16 +1,16 @@
 {
-  "asof": "2026-09-14",
-  "generated_utc": "2026-09-15T05:52:03+00:00",
+  "asof": "2026-09-15",
+  "generated_utc": "2026-09-16T05:39:39+00:00",
   "freshness": {
     "is_fresh": true,
-    "last_data_date": "2026-09-14",
-    "expected_session": "2026-09-14",
+    "last_data_date": "2026-09-15",
+    "expected_session": "2026-09-15",
     "lag_days": 0
   },
   "data_quality": {
-    "rows": 4774,
+    "rows": 4775,
     "first": "2007-11-13",
-    "last": "2026-09-14",
+    "last": "2026-09-15",
     "anomalies_total": 357,
     "series": [
       "VIX",
@@ -25,49 +25,49 @@
     ]
   },
   "regime": {
-    "date": "2026-09-14",
+    "date": "2026-09-15",
     "regime_idx": 0,
     "regime_label": "Calmo / Contango",
-    "stress_score": 0.3214,
-    "vix": 17.1,
-    "vix3m": 19.28,
-    "vix9d": 16.91,
-    "vvix": 94.89,
-    "ts_ratio": 0.8869,
-    "ts_short": 0.9889,
-    "vix_rank": 0.4742,
-    "vvix_rank": 0.3472,
-    "vvix_z": 0.553,
-    "vix_range": 9.3,
-    "realized_vol": 7.87,
-    "vrp_proxy": 9.23,
-    "vrp_proxy_rank": 0.9544,
+    "stress_score": 0.3294,
+    "vix": 17.2,
+    "vix3m": 19.36,
+    "vix9d": 17.21,
+    "vvix": 94.91,
+    "ts_ratio": 0.8884,
+    "ts_short": 1.0006,
+    "vix_rank": 0.496,
+    "vvix_rank": 0.3492,
+    "vvix_z": 0.567,
+    "vix_range": 7.21,
+    "realized_vol": 7.99,
+    "vrp_proxy": 9.21,
+    "vrp_proxy_rank": 0.9524,
     "flags": {
       "term_structure": 0.0,
-      "vix_level": 0.4742,
-      "vvix": 0.3472,
-      "trend": 0.6671
+      "vix_level": 0.496,
+      "vvix": 0.3492,
+      "trend": 0.6779
     },
-    "days_in_regime": 2,
+    "days_in_regime": 3,
     "prev_regime_label": "Transizione / Elevato",
     "prev_regime_days": 5
   },
   "vrp": {
     "latest": {
       "method": "EGARCH(1,1,1)-t [sim]",
-      "vix": 17.1,
-      "egarch_cond_ann": 13.4,
-      "egarch_fwd_ann": 15.0,
+      "vix": 17.2,
+      "egarch_cond_ann": 14.07,
+      "egarch_fwd_ann": 15.49,
       "egarch_longrun_ann": 16.76,
-      "har_fwd_ann": 14.29,
-      "consensus_fwd_ann": 14.64,
-      "vrp_egarch": 2.1,
-      "vrp_har": 2.81,
-      "vrp_consensus": 2.46,
-      "vrp": 2.46,
+      "har_fwd_ann": 14.17,
+      "consensus_fwd_ann": 14.83,
+      "vrp_egarch": 1.71,
+      "vrp_har": 3.03,
+      "vrp_consensus": 2.37,
+      "vrp": 2.37,
       "agree": true,
-      "vrp_proxy": 9.23,
-      "vrp_rank": 0.9544,
+      "vrp_proxy": 9.21,
+      "vrp_rank": 0.9524,
       "state": "ricco",
       "rv_estimator": "gk"
     }
@@ -75,61 +75,61 @@
   "seasonality": {
     "priors": {
       "5": {
-        "p_up_prior": 0.4928,
-        "hit_rate_raw": 0.4915,
-        "mean_pct": 1.476,
-        "n": 59,
+        "p_up_prior": 0.5429,
+        "hit_rate_raw": 0.55,
+        "mean_pct": 3.298,
+        "n": 60,
         "tilt": "rialzista (VIX su)"
       },
       "10": {
-        "p_up_prior": 0.5942,
-        "hit_rate_raw": 0.6102,
-        "mean_pct": 5.245,
-        "n": 59,
+        "p_up_prior": 0.6429,
+        "hit_rate_raw": 0.6667,
+        "mean_pct": 7.495,
+        "n": 60,
         "tilt": "rialzista (VIX su)"
       },
       "20": {
-        "p_up_prior": 0.6957,
-        "hit_rate_raw": 0.7288,
-        "mean_pct": 14.072,
-        "n": 59,
+        "p_up_prior": 0.7143,
+        "hit_rate_raw": 0.75,
+        "mean_pct": 15.06,
+        "n": 60,
         "tilt": "rialzista (VIX su)"
       }
     },
     "scan": {
       "5": {
-        "mean_pct": 1.476,
-        "hit_rate": 0.492,
-        "n": 59
+        "mean_pct": 3.298,
+        "hit_rate": 0.55,
+        "n": 60
       },
       "10": {
-        "mean_pct": 5.245,
-        "hit_rate": 0.61,
-        "n": 59
+        "mean_pct": 7.495,
+        "hit_rate": 0.667,
+        "n": 60
       },
       "20": {
-        "mean_pct": 14.072,
-        "hit_rate": 0.729,
-        "n": 59
+        "mean_pct": 15.06,
+        "hit_rate": 0.75,
+        "n": 60
       },
       "30": {
-        "mean_pct": 12.896,
-        "hit_rate": 0.678,
-        "n": 59
+        "mean_pct": 14.767,
+        "hit_rate": 0.717,
+        "n": 60
       },
       "50": {
-        "mean_pct": 0.595,
-        "hit_rate": 0.288,
-        "n": 59
+        "mean_pct": 0.315,
+        "hit_rate": 0.3,
+        "n": 60
       },
       "consistency": 1.0
     },
-    "current_doy": 257
+    "current_doy": 258
   },
   "forecast": {
     "horizon_primary": 20,
-    "p_up_primary": 0.4409,
-    "p_up_primary_raw": 0.4409,
+    "p_up_primary": 0.4411,
+    "p_up_primary_raw": 0.4411,
     "calibrated": false,
     "calibrated_by_horizon": {
       "5": false,
@@ -140,40 +140,40 @@
     "direction": "VIX giu'",
     "per_horizon": {
       "5": {
-        "p_up": 0.4446,
-        "p_up_raw": 0.4446,
-        "p_cond": 0.4446,
-        "p_prior": 0.4928,
+        "p_up": 0.4448,
+        "p_up_raw": 0.4448,
+        "p_cond": 0.4448,
+        "p_prior": 0.5429,
+        "bucket": "mid|contango",
+        "n_bucket": 2534,
+        "direction": "VIX giu'",
+        "calibrated": false
+      },
+      "10": {
+        "p_up": 0.4552,
+        "p_up_raw": 0.4552,
+        "p_cond": 0.4552,
+        "p_prior": 0.6429,
         "bucket": "mid|contango",
         "n_bucket": 2533,
         "direction": "VIX giu'",
         "calibrated": false
       },
-      "10": {
-        "p_up": 0.455,
-        "p_up_raw": 0.455,
-        "p_cond": 0.455,
-        "p_prior": 0.5942,
-        "bucket": "mid|contango",
-        "n_bucket": 2532,
-        "direction": "VIX giu'",
-        "calibrated": false
-      },
       "20": {
-        "p_up": 0.4409,
-        "p_up_raw": 0.4409,
-        "p_cond": 0.4409,
-        "p_prior": 0.6957,
+        "p_up": 0.4411,
+        "p_up_raw": 0.4411,
+        "p_cond": 0.4411,
+        "p_prior": 0.7143,
         "bucket": "mid|contango",
-        "n_bucket": 2529,
+        "n_bucket": 2530,
         "direction": "VIX giu'",
         "calibrated": false
       }
     },
     "conviction": {
-      "score": 0.74,
+      "score": 0.739,
       "label": "MEDIA",
-      "edge": 0.422,
+      "edge": 0.421,
       "agreement": 1.0,
       "stability": 1.0,
       "components_note": "edge = distanza dal 50%; agreement = orizzonti concordi; stability = persistenza del segno negli ultimi 5 giorni"
@@ -181,84 +181,84 @@
     "operational": {
       "bias": "SHORT_VOL",
       "conviction": "BASSA",
-      "conviction_score": 0.74,
+      "conviction_score": 0.739,
       "rationale": "premio ricco (percentile alto, confermato dai due stimatori) in regime contango senza rischio-spike: harvesting del carry. ATTENZIONE: il gate VRP non ha evidenza fuori campione (spread di premio non significativo) — e' carry, non edge dimostrato: dimensionare di conseguenza.",
       "vrp_validated": false
     },
     "cond_detail": {
       "5": {
-        "base_rate": 0.4598,
+        "base_rate": 0.46,
+        "bucket": "mid|contango",
+        "n": 2534
+      },
+      "10": {
+        "base_rate": 0.4581,
         "bucket": "mid|contango",
         "n": 2533
       },
-      "10": {
-        "base_rate": 0.458,
-        "bucket": "mid|contango",
-        "n": 2532
-      },
       "20": {
-        "base_rate": 0.4508,
+        "base_rate": 0.4509,
         "bucket": "mid|contango",
-        "n": 2529
+        "n": 2530
       }
     }
   },
   "analogues": {
     "5": {
       "horizon": 5,
-      "n": 846,
-      "basis": "percentile VIX 0.47 ±0.10, contango",
-      "p10": -14.93,
-      "p25": -8.55,
-      "median": -1.68,
-      "p75": 7.09,
-      "p90": 18.61,
-      "prob_up": 0.4385,
-      "vix_now": 17.1,
+      "n": 853,
+      "basis": "percentile VIX 0.50 ±0.10, contango",
+      "p10": -15.64,
+      "p25": -8.69,
+      "median": -1.98,
+      "p75": 6.62,
+      "p90": 17.76,
+      "prob_up": 0.4267,
+      "vix_now": 17.2,
       "levels": {
-        "p10": 14.73,
-        "p25": 15.7,
-        "median": 16.82,
-        "p75": 18.36,
-        "p90": 20.6
+        "p10": 14.71,
+        "p25": 15.77,
+        "median": 16.86,
+        "p75": 18.38,
+        "p90": 20.54
       }
     },
     "10": {
       "horizon": 10,
-      "n": 846,
-      "basis": "percentile VIX 0.47 ±0.10, contango",
-      "p10": -19.97,
-      "p25": -11.09,
-      "median": -1.74,
-      "p75": 9.62,
-      "p90": 25.39,
-      "prob_up": 0.4563,
-      "vix_now": 17.1,
+      "n": 853,
+      "basis": "percentile VIX 0.50 ±0.10, contango",
+      "p10": -20.54,
+      "p25": -12.08,
+      "median": -2.39,
+      "p75": 8.84,
+      "p90": 23.8,
+      "prob_up": 0.4373,
+      "vix_now": 17.2,
       "levels": {
-        "p10": 14.0,
-        "p25": 15.3,
-        "median": 16.81,
-        "p75": 18.83,
-        "p90": 22.04
+        "p10": 14.01,
+        "p25": 15.24,
+        "median": 16.79,
+        "p75": 18.79,
+        "p90": 21.82
       }
     },
     "20": {
       "horizon": 20,
-      "n": 846,
-      "basis": "percentile VIX 0.47 ±0.10, contango",
-      "p10": -21.54,
-      "p25": -12.93,
-      "median": -2.42,
-      "p75": 11.42,
-      "p90": 32.06,
-      "prob_up": 0.4421,
-      "vix_now": 17.1,
+      "n": 853,
+      "basis": "percentile VIX 0.50 ±0.10, contango",
+      "p10": -22.05,
+      "p25": -13.07,
+      "median": -2.61,
+      "p75": 11.21,
+      "p90": 29.9,
+      "prob_up": 0.4349,
+      "vix_now": 17.2,
       "levels": {
-        "p10": 13.79,
-        "p25": 15.03,
-        "median": 16.69,
-        "p75": 19.17,
-        "p90": 23.56
+        "p10": 13.8,
+        "p25": 15.09,
+        "median": 16.76,
+        "p75": 19.24,
+        "p90": 23.19
       }
     }
   },
@@ -297,8 +297,8 @@
           "Std %": 17.45,
           "Hit %": 22.2,
           "PF": 0.15,
-          "Baseline %": -0.05,
-          "Excess %": -11.82,
+          "Baseline %": -0.04,
+          "Excess %": -11.83,
           "CI low %": -17.03,
           "CI high %": -6.78,
           "p-value": 0.0,
@@ -314,7 +314,7 @@
           "Std %": 28.57,
           "Hit %": 26.7,
           "PF": 0.3,
-          "Baseline %": -0.11,
+          "Baseline %": -0.1,
           "Excess %": -14.18,
           "CI low %": -22.3,
           "CI high %": -5.73,
@@ -332,7 +332,7 @@
           "Hit %": 15.6,
           "PF": 0.28,
           "Baseline %": -0.19,
-          "Excess %": -18.68,
+          "Excess %": -18.69,
           "CI low %": -28.39,
           "CI high %": -8.28,
           "p-value": 0.002,
@@ -349,7 +349,7 @@
           "Hit %": 20.0,
           "PF": 0.18,
           "Baseline %": -0.51,
-          "Excess %": -23.05,
+          "Excess %": -23.04,
           "CI low %": -32.4,
           "CI high %": -14.07,
           "p-value": 0.0,
@@ -365,8 +365,8 @@
           "Std %": 34.37,
           "Hit %": 24.4,
           "PF": 0.18,
-          "Baseline %": -0.77,
-          "Excess %": -22.62,
+          "Baseline %": -0.78,
+          "Excess %": -22.61,
           "CI low %": -31.78,
           "CI high %": -14.43,
           "p-value": 0.0,
@@ -405,7 +405,7 @@
           "Excess %": 0.13,
           "CI low %": -0.75,
           "CI high %": 1.69,
-          "p-value": 0.817,
+          "p-value": 0.815,
           "Sig": ""
         },
         {
@@ -476,8 +476,8 @@
           "Std %": 9.91,
           "Hit %": 59.1,
           "PF": 1.84,
-          "Baseline %": -0.05,
-          "Excess %": 2.23,
+          "Baseline %": -0.04,
+          "Excess %": 2.22,
           "CI low %": -1.66,
           "CI high %": 6.42,
           "p-value": 0.284,
@@ -493,7 +493,7 @@
           "Std %": 25.04,
           "Hit %": 36.4,
           "PF": 2.3,
-          "Baseline %": -0.11,
+          "Baseline %": -0.1,
           "Excess %": 5.51,
           "CI low %": -3.37,
           "CI high %": 17.31,
@@ -544,7 +544,7 @@
           "Std %": 26.1,
           "Hit %": 38.1,
           "PF": 0.69,
-          "Baseline %": -0.77,
+          "Baseline %": -0.78,
           "Excess %": -2.65,
           "CI low %": -12.65,
           "CI high %": 5.61,
@@ -567,7 +567,7 @@
           "Excess %": 0.19,
           "CI low %": -0.49,
           "CI high %": 1.3,
-          "p-value": 0.713,
+          "p-value": 0.711,
           "Sig": ""
         },
         {

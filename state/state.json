@@ -1,9 +1,9 @@
 {
-  "asof": "2026-11-09",
-  "regime_idx": 1,
+  "asof": "2026-11-10",
+  "regime_idx": 0,
   "bias": "FLAT",
   "conviction": "NULLA",
   "p_up_primary": 0.4421,
-  "last_run_utc": "2026-11-10T08:00:36+00:00",
-  "last_alert_utc": "2026-11-10T08:00:36+00:00"
+  "last_run_utc": "2026-11-11T07:30:32+00:00",
+  "last_alert_utc": "2026-11-11T07:30:32+00:00"
 }

@@ -1,17 +1,17 @@
 {
-  "generated_utc": "2026-11-26T09:10:58+00:00",
-  "rows": 4822,
+  "generated_utc": "2026-11-27T09:27:20+00:00",
+  "rows": 4823,
   "first": "2007-11-13",
-  "last": "2026-11-25",
+  "last": "2026-11-26",
   "series": {
     "VIX": {
       "cboe_bars": 9324,
-      "eodhd_bars": 9327,
-      "merged_bars": 9327,
+      "eodhd_bars": 9328,
+      "merged_bars": 9328,
       "cboe_last": "2026-11-25",
-      "eodhd_last": "2026-11-25",
+      "eodhd_last": "2026-11-26",
       "first": "1990-01-02",
-      "last": "2026-11-25",
+      "last": "2026-11-26",
       "divergences": 0
     },
     "VIX3M": {
